@@ -78,10 +78,19 @@
       </ul>
       <div class="flex space-x-1 rtl:space-x-reverse bg-white rounded-full w-fit p-1">
         <button class="px-3 py-1 text-black bg-yellow-500 rounded-full">ع</button>
-        <button class="px-3 py-1 text-black rounded-full">EN</button>
+        <button class="px-3 py-1 text-black rounded-full"><a href="index.html">EN</a></button>
       </div>
     </div>
 </nav>
+
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
 <section class="w-full bg-white py-16 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10" dir="rtl">
   <!-- Text Section -->
@@ -207,74 +216,6 @@
   </div>
 </section>
 
-<div class="min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8" dir="rtl">
-    <div class="w-full max-w-7xl">
-        <!-- Header Section -->
-        <div class="text-center mb-12">
-            <h1 class="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">مشاريعنا</h1>
-            <p class="text-gray-600 text-lg sm:text-xl max-w-2xl mx-auto">
-                استكشف مجموعتنا المتنوعة من المشاريع التي تشمل المجمعات السكنية، المباني التجارية،
-                مشاريع الصرف الصحي، والتصاميم المبتكرة.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project 1 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
-                <img src="projects-images/pr-1.jpg" alt="Palm Hills Compound" class="w-full h-48 object-cover">
-                <div class="flex space-x-2 rtl:space-x-reverse p-4 border-b border-gray-100 justify-center">
-                    <img src="projects-images/pr-1-sm-1.jpg" alt="صورة صغيرة 1" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                    <img src="projects-images/pr-1-sm-2.jpg" alt="صورة صغيرة 2" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                    <img src="projects-images/pr-1-sm-3.jpg" alt="صورة صغيرة 3" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                    <img src="projects-images/pr-1-sm.jpg" alt="صورة صغيرة 4" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                </div>
-                <div class="p-6 text-right">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">صحة جامعة السهلة</h3>
-                    <p class="text-gray-500 text-sm mb-4">القاهرة الجديدة، القاهرة</p>
-                    <p class="text-gray-600 text-base">
-                        مجمع سكني فاخر يضم 200 فيلا بمرافق حديثة وحدائق طبيعية.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
-                <img src="https://placehold.co/600x400/D1D5DB/FFFFFF?text=Project+Image+2" alt="Marina Heights" class="w-full h-48 object-cover">
-                <div class="flex space-x-2 rtl:space-x-reverse p-4 border-b border-gray-100 justify-center">
-                    <img src="https://placehold.co/48x48/D1D5DB/FFFFFF?text=img1" alt="صورة صغيرة 1" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                    <img src="https://placehold.co/48x48/D1D5DB/FFFFFF?text=img2" alt="صورة صغيرة 2" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                    <img src="https://placehold.co/48x48/D1D5DB/FFFFFF?text=img3" alt="صورة صغيرة 3" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                    <img src="https://placehold.co/48x48/D1D5DB/FFFFFF?text=img4" alt="صورة صغيرة 4" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                </div>
-                <div class="p-6 text-right">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">مارينا هايتس</h3>
-                    <p class="text-gray-500 text-sm mb-4">الساحل الشمالي، الإسكندرية</p>
-                    <p class="text-gray-600 text-base">
-                        مجمع سكني فاخر يضم شققًا بإطلالات بحرية ومرافق على طراز المنتجعات للعطلات.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
-                <img src="https://placehold.co/600x400/D1D5DB/FFFFFF?text=Project+Image+3" alt="Cairo Business District" class="w-full h-48 object-cover">
-                <div class="flex space-x-2 rtl:space-x-reverse p-4 border-b border-gray-100 justify-center">
-                    <img src="https://placehold.co/48x48/D1D5DB/FFFFFF?text=img1" alt="صورة صغيرة 1" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                    <img src="https://placehold.co/48x48/D1D5DB/FFFFFF?text=img2" alt="صورة صغيرة 2" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                    <img src="https://placehold.co/48x48/D1D5DB/FFFFFF?text=img3" alt="صورة صغيرة 3" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                    <img src="https://placehold.co/48x48/D1D5DB/FFFFFF?text=img4" alt="صورة صغيرة 4" class="w-12 h-12 rounded-lg object-cover border-2 border-transparent hover:border-gold-500 transition duration-300 cursor-pointer">
-                </div>
-                <div class="p-6 text-right">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">حي الأعمال بالقاهرة</h3>
-                    <p class="text-gray-500 text-sm mb-4">العاصمة الإدارية الجديدة</p>
-                    <p class="text-gray-600 text-base">
-                        مجمع مكاتب حديث يتكون من 50 طابقًا، ويتميز بأحدث المرافق وتقنيات البناء الذكية.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <section id="services" class="w-full bg-gray-300 py-16" dir="rtl">
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-5xl font-bold text-gray-900 text-center mb-4">خدماتنا</h2>
