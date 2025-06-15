@@ -35,11 +35,11 @@
   }
 </style>
 </head>
-<body class="scroll-smooth">
- <nav class="w-full bg-slate-100 shadow-sm px-6 py-4">
+<body class="scroll-smooth bg-gradient-to-t from-gray-400 to-gray-900">
+ <nav class="fixed top-0 left-0 right-0 z-50 w-ful shadow-sm px-6 py-4 backdrop-blur-lg">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <div class="flex flex-row justify-start items-center relative text-xl font-bold text-gray-800">
+      <div class="flex flex-row justify-start items-center relative text-xl font-bold text-yellow-500">
         <img class="w-7 h-7 mr-3" src="icons/loogo_ic.png" alt="">
         Usus Al-Janoub
       </div>
@@ -47,10 +47,10 @@
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
         <li class="text-yellow-500 font-bold">Home</li>
-        <li><a class="no-underline" href="#aubout">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li>Projects</li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="text-gray-300"><a class="no-underline" href="#aubout">About Us</a></li>
+        <li class="text-gray-300"><a href="#services">Services</a></li>
+        <li class="text-gray-300">Projects</li>
+        <li class="text-gray-300"><a href="#contact">Contact</a></li>
       </ul>
 
       <!-- Language Switch -->
@@ -61,7 +61,7 @@
 
       <!-- Hamburger -->
       <div class="md:hidden">
-        <button id="menuBtn" class="text-gray-800 focus:outline-none text-2xl">
+        <button id="menuBtn" class="text-yellow-500 focus:outline-none text-2xl">
           ☰
         </button>
       </div>
@@ -71,10 +71,10 @@
     <div id="mobileMenu" class="hidden mt-4 md:hidden space-y-3">
       <ul class="flex flex-col space-y-2 text-gray-700 font-medium">
         <li class="text-yellow-500 font-bold">Home</li>
-        <li><a class="no-underline" href="#aubout">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li>Projects</li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="text-gray-300"</li><a class="no-underline" href="#aubout">About Us</a></li>
+        <li class="text-gray-300"</li><a href="#services">Services</a></li>
+        <li class="text-gray-300"</li>Projects</li>
+        <li class="text-gray-300"</li><a href="#contact">Contact</a></li>
       </ul>
       <div class="flex space-x-1 bg-white rounded-full w-fit p-1">
         <button class="px-3 py-1 text-black rounded-full"><a href="arabic.html">ع</a></button>
@@ -92,7 +92,7 @@
     });
   </script>
 
-<section class="w-full bg-white py-16 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
+<section class="w-full h-screen py-16 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
   <!-- Text Section -->
   <div class="max-w-xl">
     <h1 class="text-4xl md:text-5xl font-bold text-yellow-500 leading-tight">
@@ -124,10 +124,10 @@
   </div>
 </section>
 
-<section id="aubout" class="bg-gray-200 py-16">
+<section id="aubout" class="py-16">
   <div class="max-w-4xl mx-auto text-center px-4">
-    <h2 class="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
-    <p class="text-lg text-gray-700 mb-12">
+    <h2 class="text-4xl font-bold text-white mb-4">About Us</h2>
+    <p class="text-lg text-gray-200 mb-12">
       Usus Al-Janoub is a specialized engineering firm based in Basra, Iraq, offering integrated services in design, construction, and project supervision.
     </p>
     <div class="flex flex-col md:flex-row gap-8 mb-16">
@@ -163,7 +163,7 @@
         </p>
       </div>
     </div>
-    <h3 class="text-3xl font-bold text-gray-900 mb-8">Core Values</h3>
+    <h3 class="text-3xl font-bold text-white mb-8">Core Values</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
       <!-- Quality -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
@@ -214,10 +214,10 @@
   </div>
 </section>
 
-<section id="services" class="w-full bg-gray-300 py-16">
+<section id="services" class="w-full py-16">
   <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-5xl font-bold text-gray-900 text-center mb-4">Our Services</h2>
-    <p class="text-xl text-gray-500 text-center mb-12">
+    <h2 class="text-5xl font-bold text-white text-center mb-4">Our Services</h2>
+    <p class="text-xl text-gray-100 text-center mb-12">
       We provide a comprehensive range of specialized engineering services
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -318,9 +318,9 @@
   </div>
 </section>
 
-<div class="w-full bg-white py-12">
+<div class="w-full py-12">
   <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">What Our Customers Say</h2>
+    <h2 class="text-3xl font-bold text-center text-white mb-8">What Our Customers Say</h2>
     <div class="relative">
       <!-- Scrollable Reviews -->
       <div id="review-scroll" class="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
@@ -422,7 +422,7 @@
                         Send Message
                     </button>
 
-                    <a href="https://wa.me/+9647730799444" target="_blank" class="w-full py-3 px-6 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 mt-4">
+                    <a href="https://wa.me/964707730799444" target="_blank" class="w-full py-3 px-6 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 mt-4">
                         <i class="fab fa-whatsapp text-xl"></i>
                         <span>Contact via WhatsApp</span>
                     </a>
