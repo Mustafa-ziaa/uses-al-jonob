@@ -133,7 +133,7 @@
     <div class="flex flex-col md:flex-row gap-8 mb-16">
       <div class="bg-white rounded-2xl shadow-lg flex-1 p-8 flex flex-col items-start">
         <div class="flex items-center gap-4 mb-2">
-          <div class="bg-yellow-400/40 rounded-xl p-3 flex items-center justify-center">
+          <div class="bg-gray-500 rounded-xl p-3 flex items-center justify-center">
             <!-- Eye icon -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 10a3 3 0 100-6 3 3 0 000 6z" />
@@ -148,7 +148,7 @@
       <!-- Mission Card -->
       <div class="bg-white rounded-2xl shadow-lg flex-1 p-8 flex flex-col items-start">
         <div class="flex items-center gap-4 mb-2">
-          <div class="bg-yellow-400/40 rounded-xl p-3 flex items-center justify-center">
+          <div class="bg-gray-500 rounded-xl p-3 flex items-center justify-center">
             <!-- Target icon -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -167,7 +167,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
       <!-- Quality -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
-        <div class="bg-yellow-400/40 rounded-xl p-3 mb-4 flex items-center justify-center">
+        <div class="bg-gray-500 rounded-xl p-3 mb-4 flex items-center justify-center">
           <!-- Badge Check icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.09 6.26L21 9.27l-5 3.73L17.18 21 12 17.77 6.82 21 8 13l-5-3.73 6.91-1.01z" />
@@ -178,7 +178,7 @@
       </div>
       <!-- Commitment -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
-        <div class="bg-yellow-400/40 rounded-xl p-3 mb-4 flex items-center justify-center">
+        <div class="bg-gray-500 rounded-xl p-3 mb-4 flex items-center justify-center">
           <!-- Handshake icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -189,7 +189,7 @@
       </div>
       <!-- Innovation -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
-        <div class="bg-yellow-400/40 rounded-xl p-3 mb-4 flex items-center justify-center">
+        <div class="bg-gray-500 rounded-xl p-3 mb-4 flex items-center justify-center">
           <!-- Light Bulb icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a6 6 0 016 6c0 3-2 5-3 7H9c-1-2-3-4-3-7a6 6 0 016-6z" />
@@ -201,7 +201,7 @@
       </div>
       <!-- Integrity -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
-        <div class="bg-yellow-400/40 rounded-xl p-3 mb-4 flex items-center justify-center">
+        <div class="bg-gray-500 rounded-xl p-3 mb-4 flex items-center justify-center">
           <!-- Shield icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l7 4v5c0 5.25-3.43 10.74-7 12-3.57-1.26-7-6.75-7-12V7l7-4z" />
@@ -214,6 +214,162 @@
   </div>
 </section>
 
+
+<section class="py-16 px-4 relative">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-yellow-500">Our Projects</h2>
+
+            <!-- Left Arrow Button - Now visible on all screen sizes -->
+            <button id="scrollLeftBtn" class="absolute left-2 lg:left-8 top-1/2 -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full shadow-lg z-10 transition-all duration-300">
+                <i class="fas fa-chevron-left text-2xl"></i>
+            </button>
+
+            <!-- Projects Container - Horizontal Scrolling -->
+            <div id="projects-carousel" class="flex overflow-x-hidden snap-x snap-mandatory pb-4 no-scrollbar">
+                <!-- Project Card 1 -->
+                <div class="flex-shrink-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 snap-center p-4">
+                    <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300">
+                        <!-- Main Photo -->
+                        <img src="projects-images/aswar/main.jpg"
+                             alt="Main Project Image 1"
+                             class="w-full h-auto object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <h3 class="text-3xl font-semibold mb-3 text-yellow-400">Aswar Al Mostakbal Complex</h3>
+                            <p class="text-gray-300 mb-5 text-lg leading-relaxed">
+                                The Aswar Al Mostakbal Complex in Basra, Iraq, is a prominent real estate development 
+                                designed to offer modern living and commercial spaces. It typically features a mix of residential.
+                            </p>
+                            <!-- Small Photos Grid -->
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+                                <img src="projects-images/aswar/p1.jpg"
+                                     alt="Small Project Image 1a"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                                <img src="projects-images/aswar/p2.jpg"
+                                     alt="Small Project Image 1b"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                                <img src="projects-images/aswar/p3.jpg"
+                                     alt="Small Project Image 1c"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="flex-shrink-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 snap-center p-4">
+                    <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300">
+                        <!-- Main Photo -->
+                        <img src="projects-images/alfarah/image.png"
+                             alt="Main Project Image 2"
+                             class="w-full h-auto object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <h3 class="text-3xl font-semibold mb-3 text-yellow-400">Al Farah Residential Complex</h3>
+                            <p class="text-gray-300 mb-5 text-lg leading-relaxed">
+                                The Al Farah Residential Complex in Basra, Iraq, is a housing development that aims 
+                                to provide modern and comfortable living spaces for residents. It typically comprises 
+                                various types of residential units
+                            </p>
+                            <!-- Small Photos Grid -->
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+                                <img src="projects-images/alfarah/p2.jpg"
+                                     alt="Small Project Image 2a"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                                <img src="projects-images/alfarah/p3.jpg"
+                                     alt="Small Project Image 2b"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                                <img src="projects-images/alfarah/p5.jpg"
+                                     alt="Small Project Image 2c"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                                <img src="projects-images/alfarah/p1.jpg"
+                                     alt="Small Project Image 2c"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="flex-shrink-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 snap-center p-4">
+                    <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300">
+                        <!-- Main Photo -->
+                        <img src="https://placehold.co/1200x600/7f8c8d/ffffff?text=Main+Project+Image+3"
+                             alt="Main Project Image 3"
+                             class="w-full h-auto object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <h3 class="text-3xl font-semibold mb-3 text-yellow-400">Project Title Three</h3>
+                            <p class="text-gray-300 mb-5 text-lg leading-relaxed">
+                                For Project Three, we focused on sustainable development and eco-friendly practices.
+                                The successful completion of this endeavor underscores our dedication to environmental
+                                responsibility and innovative construction methods that minimize ecological impact.
+                                It's a testament to our ability to integrate green technologies.
+                            </p>
+                            <!-- Small Photos Grid -->
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+                                <img src="https://placehold.co/300x200/d35400/ffffff?text=Sub+Image+3a"
+                                     alt="Small Project Image 3a"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                                <img src="https://placehold.co/300x200/c0392b/ffffff?text=Sub+Image+3b"
+                                     alt="Small Project Image 3b"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                                <img src="https://placehold.co/300x200/7f8c8d/ffffff?text=Sub+Image+3c"
+                                     alt="Small Project Image 3c"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                                <img src="https://placehold.co/300x200/2c3e50/ffffff?text=Sub+Image+3d"
+                                     alt="Small Project Image 3d"
+                                     class="w-full h-32 object-cover rounded-md shadow-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more project cards here following the same structure -->
+            </div>
+
+            <!-- Right Arrow Button - Now visible on all screen sizes -->
+            <button id="scrollRightBtn" class="absolute right-2 lg:right-8 top-1/2 -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full shadow-lg z-10 transition-all duration-300">
+                <i class="fas fa-chevron-right text-2xl"></i>
+            </button>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.getElementById('projects-carousel');
+            const scrollLeftBtn = document.getElementById('scrollLeftBtn');
+            const scrollRightBtn = document.getElementById('scrollRightBtn');
+            const projectCards = carousel.querySelectorAll('.flex-shrink-0');
+
+            if (!carousel || projectCards.length === 0) {
+                // Console error if elements are not found, instead of early return.
+                console.error("Carousel or project cards not found. Scrolling functionality cannot be initialized.");
+            } else {
+                // Function to calculate card width based on screen size and Tailwind classes
+                const getCardWidth = () => {
+                    const card = projectCards[0];
+                    if (!card) return 0; // Return 0 if no card is found
+                    // Get the actual rendered width of the card element, including padding
+                    return card.offsetWidth;
+                };
+
+                const scrollCarousel = (direction) => {
+                    const cardWidth = getCardWidth();
+                    const scrollAmount = direction * cardWidth;
+                    carousel.scrollBy({
+                        left: scrollAmount,
+                        behavior: 'smooth'
+                    });
+                };
+
+                scrollLeftBtn.addEventListener('click', () => scrollCarousel(-1));
+                scrollRightBtn.addEventListener('click', () => scrollCarousel(1));
+
+                // Optional: Show/hide arrows based on scroll position (more advanced, not in initial request)
+                // You might want to add IntersectionObserver or scroll event listeners
+                // to manage arrow visibility if you have many cards.
+            }
+        });
+    </script>
+
 <section id="services" class="w-full py-16">
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-5xl font-bold text-white text-center mb-4">Our Services</h2>
@@ -223,7 +379,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Engineering Design -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
-        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+        <div class="bg-gray-500 rounded-full p-4 mb-4 flex items-center justify-center">
           <!-- Building Icon -->
           <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <rect x="7" y="3" width="10" height="18" rx="2" />
@@ -237,7 +393,7 @@
       </div>
       <!-- Project Execution -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
-        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+        <div class="bg-gray-500 rounded-full p-4 mb-4 flex items-center justify-center">
           <!-- Hammer Icon -->
           <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path d="M17 17l4-4m-7-7l-4 4m1 5l7 7m-1.5-4.5L6.5 6.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
@@ -249,7 +405,7 @@
         </p>
       </div>
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
-        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+        <div class="bg-gray-500 rounded-full p-4 mb-4 flex items-center justify-center">
           <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <rect x="9" y="2" width="6" height="4" rx="1" />
             <rect x="4" y="6" width="16" height="16" rx="2"/>
@@ -263,7 +419,7 @@
       </div>
       <!-- Surveying Works -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
-        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+        <div class="bg-gray-500 rounded-full p-4 mb-4 flex items-center justify-center">
           <!-- Map Pin Icon -->
           <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path d="M12 21c-4.97-4.97-8-8.03-8-11A8 8 0 0112 3a8 8 0 018 7c0 2.97-3.03 6.03-8 11z"/>
@@ -277,7 +433,7 @@
       </div>
       <!-- Electrical & Mechanical Works -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
-        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+        <div class="bg-gray-500 rounded-full p-4 mb-4 flex items-center justify-center">
           <!-- Lightning Bolt Icon -->
           <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -290,7 +446,7 @@
       </div>
       <!-- Smart & Sustainable Solutions -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
-        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+        <div class="bg-gray-500 rounded-full p-4 mb-4 flex items-center justify-center">
           <!-- Light Bulb Icon -->
           <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path d="M12 3a6 6 0 016 6c0 3-2 5-3 7H9c-1-2-3-4-3-7a6 6 0 016-6z"/>
@@ -432,7 +588,7 @@
                 <div class="flex flex-col space-y-6">
                     <!-- Phone -->
                     <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex items-center space-x-4">
-                        <div class="flex-shrink-0 bg-yellow-100 rounded-full p-3">
+                        <div class="flex-shrink-0 bg-gray-500 rounded-full p-3">
                             <i class="fas fa-phone-alt text-yellow-600 text-xl"></i>
                         </div>
                         <div>
@@ -443,7 +599,7 @@
 
                     <!-- Email -->
                     <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex items-center space-x-4">
-                        <div class="flex-shrink-0 bg-yellow-100 rounded-full p-3">
+                        <div class="flex-shrink-0 bg-gray-500 rounded-full p-3">
                             <i class="fas fa-envelope text-yellow-600 text-xl"></i>
                         </div>
                         <div>
@@ -454,7 +610,7 @@
 
                     <!-- Address -->
                     <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex items-center space-x-4">
-                        <div class="flex-shrink-0 bg-yellow-100 rounded-full p-3">
+                        <div class="flex-shrink-0 bg-gray-500 rounded-full p-3">
                             <i class="fas fa-map-marker-alt text-yellow-600 text-xl"></i>
                         </div>
                         <div>
@@ -465,7 +621,7 @@
 
                     <!-- Working Hours -->
                     <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex items-center space-x-4">
-                        <div class="flex-shrink-0 bg-yellow-100 rounded-full p-3">
+                        <div class="flex-shrink-0 bg-gray-500 rounded-full p-3">
                             <i class="fas fa-clock text-yellow-600 text-xl"></i>
                         </div>
                         <div>
